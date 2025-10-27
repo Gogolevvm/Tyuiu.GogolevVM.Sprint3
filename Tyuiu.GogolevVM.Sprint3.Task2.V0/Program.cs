@@ -3,17 +3,22 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        double s0 = 0;
-        double s1 = 0;
-        int x = 2;
-        for (int j = 1; j <= 3; j++)
+        int count1 = 0;
+        int x;
+
+        for (x = 10; x <= 14; x++) 
         {
-            for (int k = 1; k <= 3; k++)
+            for (int d = 1; d <= x; d++)
             {
-                s0 = k * x + 2;
-                s1 += s0;
+                if (x % d ==  0)
+                {
+                    if (d < 4)
+                    {
+                        count1++;
+                    }
+                }
             }
         }
-        Console.WriteLine(Math.Round(s1,3));
+        Console.WriteLine(count1);
     }
 }
