@@ -6,13 +6,13 @@ namespace Tyuiu.GogolevVM.Sprint3.Task4.V23.Lib
         public double Calculate(int startValue, int stopValue)
         {
             double res = 1;
-            for (int x = startValue; x <= stopValue; startValue ++)
+            for (int x = startValue; x <= stopValue; x ++)
             {
                 if (x == 0)
                 {
                     break;
                 }
-                else
+                
                 {
                     res = res * ((Math.Cos(x) / x) + 3);
                 }

@@ -19,7 +19,7 @@ internal class Program
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                               *");
         Console.WriteLine("****************************************************************************");
 
-        Console.WriteLine("Сумма ряда" + ds.Calculate(startValue, stopValue));
+        Console.WriteLine("Сумма ряда = " + ds.Calculate(startValue, stopValue));
 
 
     }

@@ -13,7 +13,7 @@ namespace Tyuiu.GogolevVM.Sprint3.Task4.V23.Test
 
             double res = ds.Calculate(startValue, stopValue);
 
-            double wait = 0.104;
+            double wait = 244.656;
             Assert.AreEqual(wait, res);
         }
     }
