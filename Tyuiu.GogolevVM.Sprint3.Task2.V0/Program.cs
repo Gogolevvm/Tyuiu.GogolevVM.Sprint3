@@ -3,20 +3,18 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        int a = 4;
-        int b = 2;
-        int c = 1;
-        int d = 9;
-        int i = 1;
-        do
+        int x;
+        double sp = 0;
+        int i = 0;
+        for (x = -2; x <= 2; x++)
         {
-            b++;
-            b = a + c;
-            c = b - a;
-            d = (c + a) - i;
+            if (x == 0)
+            {
+                break;
+            }
+            sp = sp + (3 * x - x);
             i++;
-
-        } while (i < 4);
-        Console.WriteLine(d);
+        }
+        Console.WriteLine(sp);
     }
 }
