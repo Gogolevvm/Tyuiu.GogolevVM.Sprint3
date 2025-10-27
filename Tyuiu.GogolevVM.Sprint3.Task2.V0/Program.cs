@@ -3,18 +3,17 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        int x;
-        double sp = 0;
-        int i = 0;
-        for (x = -2; x <= 2; x++)
+        double s0 = 0;
+        double s1 = 0;
+        int x = 2;
+        for (int j = 1; j <= 3; j++)
         {
-            if (x == 0)
+            for (int k = 1; k <= 3; k++)
             {
-                break;
+                s0 = k * x + 2;
+                s1 += s0;
             }
-            sp = sp + (3 * x - x);
-            i++;
         }
-        Console.WriteLine(sp);
+        Console.WriteLine(Math.Round(s1,3));
     }
 }
