@@ -3,25 +3,10 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        DataService ds = new DataService();
+        double x, y;
+        x = -4;
+        y = Math.Round(2 * x - 4 + ((2 * x - 1) / (Math.Sin(x) + 1)),2  );
+        Console.WriteLine(y);
 
-        Console.WriteLine("********************************************************************************************");
-        Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ                                                                          *");
-        Console.WriteLine("********************************************************************************************");
-
-        double value = 5;
-        int startValue = 1;
-        int endValue = 10;
-
-        Console.WriteLine("Переменная X = " + value);
-        Console.WriteLine("Старт шага = " + startValue);
-        Console.WriteLine("Конец шага = " + endValue);
-
-
-        Console.WriteLine("****************************************************************************");
-        Console.WriteLine("* РЕЗУЛЬТАТ:                                                               *");
-        Console.WriteLine("****************************************************************************");
-
-        Console.WriteLine("Сумма равна = " + ds.GetSumSeries(value, startValue, endValue));
     }
 }
